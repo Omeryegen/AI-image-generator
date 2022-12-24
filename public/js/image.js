@@ -21,7 +21,7 @@ const fetchImage = async ()=>{
     addSpinner();
     button.disabled = true;
     try{    
-        const response = await fetch( "https://puzzled-goat-sarong.cyclic.app", {
+        const response = await fetch( "https://puzzled-goat-sarong.cyclic.app/", {
         method:"POST",
         headers: {
             "Content-Type": "application/json"
