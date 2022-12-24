@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    padding: .5rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+button:hover{
+    background-color: beige;
+}
+a {
+    text-decoration: none;
+}
+
+h2 {
+    margin: 0.5rem 0;
+}
+
+nav {
+    width: 100vw;
+    background-color: #282A3A;
+}
+.white {
+    color: #fff;
+}
+
+.error {
+    color: #fff;
+    margin-top: .5rem;
+    font-weight: bold;
+}
+/*Navbar*/
+.navbar-content {
+    width: 100%;
+    height: 3.5rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn {
+    padding: 1.2rem;
+}
+.btn-secondary {
+    color: #fff;
+}
+
+.btn-secondary:hover{
+    background-color: coral;
+    color: #fff;
+}
+.btn-primary {
+    font-weight: bold;
+    background-color: #fff;
+    color: coral;
+    border-radius: 10px;
+    border: none;
+}
+
+
+/*Image Showcase*/
+
+.showcase{
+    width: 100%;
+    background-color: coral;
+}
+.showcase-content {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+    max-width: 600px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 80%;
+    padding: .5rem 1rem;
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+}
+#selection {
+    width: 80%;
+    padding: .4rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+#button {
+    width: 150px;
+}
+
+/*Image-Content*/
+.result {
+    width: 100%;
+    margin: 2rem 0 4rem 0;
+}
+
+/*Output*/
+
+.output {
+    display: flex;
+    justify-content: center;
+
+}
+
+/*Explanation*/
+.explain-content {
+    width: 70%;
+    margin: auto;
+}
+.explain {
+    line-height: 1.5rem;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+
+    background-color: #282A3A;
+    color: #fff;
+}
+
+.footer-content {
+    width: 90%;
+    padding: 1rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Spinner*/
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    }
