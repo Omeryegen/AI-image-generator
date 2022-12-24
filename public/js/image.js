@@ -4,6 +4,8 @@ const button = document.querySelector('#button');
 const selection = document.querySelector('#selection');
 const image = document.querySelector('.output');
 const prompt = document.querySelector('#prompt');
+const dotenv = require('dotenv').config();
+const port = process.env.PORT;
 
 const addSpinner = ()=>{
     const spinner = document.createElement('span');
@@ -20,7 +22,7 @@ const fetchImage = async ()=>{
     addSpinner();
     button.disabled = true;
     try{    
-        const response = await fetch( process.env.PORT, {
+        const response = await fetch( port, {
         method:"POST",
         headers: {
             "Content-Type": "application/json"
