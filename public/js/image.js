@@ -20,7 +20,7 @@ const fetchImage = async ()=>{
     addSpinner();
     button.disabled = true;
     try{    
-        const response = await fetch('http://localhost:3000', {
+        const response = await fetch(rocess.env.CYCLIC_URL, {
         method:"POST",
         headers: {
             "Content-Type": "application/json"
