@@ -20,7 +20,7 @@ const fetchImage = async ()=>{
     addSpinner();
     button.disabled = true;
     try{    
-        const response = await fetch( "/", {
+        const response = await fetch( process.env.PORT, {
         method:"POST",
         headers: {
             "Content-Type": "application/json"
