@@ -5,7 +5,7 @@ const port = process.env.PORT;
 const ejs = require('ejs');
 const app = express();
 const cors = require('cors')
-app.use(cors())
+
 
 app.set('view engine', 'ejs');  
 app.use(express.json());
