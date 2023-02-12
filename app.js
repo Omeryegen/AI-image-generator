@@ -4,7 +4,7 @@ const dotenv = require('dotenv').config();
 const port = process.env.PORT;
 const ejs = require('ejs');
 const app = express();
-const cors = require('cors')
+
 
 
 app.set('view engine', 'ejs');  
